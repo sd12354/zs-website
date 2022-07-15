@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z & S Designs</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="top" id="top">
+    <div class="nav">
+      <div class="logo">
+        <img src="zslogo.png" alt="">
+      </div>
+      <button><a id="nav1" href="#home">Home </a></button>
+      <button><a id="nav2" href="#aboutus">About Us </a></button>
+      <button><a id="nav3" href="#pastwork">Past Work </a></button>
+      <button><a id="nav4" href="contact.html">Contact Us </a></button>
+      <div class="mode">
+        <button onclick="mode()"><ion-icon id="mode"style="transition: ease-in-out .25s;font-size: 1.75rem; padding: 10px; border-radius: 35px; color: rgb(255, 220, 63);"name="sunny-sharp"></ion-icon></button>
+      </div>
+    </div>
+  </div>
+  <div class="home" id="home">
+    <h1 class="mainTxt" id="mainTxt"></h1>
+  </div>
+  <div class="about-us" id="aboutus">
+    <h2>About Us</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo laborum a aliquid ut, molestiae quidem maiores tempore similique perferendis, facere doloremque esse ipsam. Corporis odit consequatur incidunt, ullam, laboriosam aliquid suscipit maxime assumenda facilis quia reiciendis ipsum adipisci quas voluptas ab magni consectetur sint ad? Omnis sit incidunt quam tenetur.</p>
+    <div class="grid">
+      <div class="item">
+        <p class="itemTopTxt">Quick <ion-icon name="rocket-sharp"></ion-icon></p>
+        <p class="itemTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quaerat molestiae odit suscipit sunt similique eos enim illo rerum aut architecto iure, praesentium velit porro minus aliquid, unde nisi voluptatibus!</p>
+      </div>
+      <div class="item">
+        <p class="itemTopTxt">Simple <ion-icon name="leaf-sharp"></ion-icon></p>
+        <p class="itemTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at cum perspiciatis necessitatibus quia dolore consequuntur suscipit id a iste aspernatur illo pariatur, doloremque eius obcaecati voluptas reprehenderit odio quidem!</p>
+      </div>
+      <div class="item">
+        <p class="itemTopTxt">Stress Free <ion-icon name="happy-sharp"></ion-icon></p>
+        <p class="itemTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore magni incidunt mollitia consectetur atque suscipit ratione at aliquam error minima impedit, alias repellendus. Eos veritatis accusamus laborum laudantium rem!</p>
+      </div>
+    </div>
+  </div>
+  <div class="pastwork" id="pastwork">
+    <h2>Past Work <ion-icon name="hammer-sharp"></ion-icon></h2>
+    <p>Hinche Marathon Organization</p>
+    <div class="showcase1">
+      <img src="hinche.png" alt="">
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia perspiciatis at libero, accusantium repudiandae assumenda voluptatibus et ad praesentium.</p>
+      <button class="visit"><a href="">Visit <ion-icon name="open-sharp"></ion-icon></a></button>
+    </div>
+    <p>Syntis Bio</p>
+    <div class="showcase2">
+      <img src="syntis.png" alt="">
+      <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt dolor sit quibusdam facere excepturi dignissimos sequi non similique obcaecati.</p>
+      <button class="visit"><a href="">Visit <ion-icon name="open-sharp"></ion-icon></a></button>
+    </div>
+    <p>Zaki Araujo</p>
+    <div class="showcase3">
+      <img src="zaki.png" alt="">
+      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eaque, neque officia nisi nemo error autem consequuntur aut atque. Labore.</p>
+      <button class="visit"><a href="">Visit <ion-icon name="open-sharp"></ion-icon></a></button>
+    </div>
+  </div>
+</body>
+<script src="main.js">
+function mode() {
+  console.log("oggggg")
+  var top = document.getElementById("top");
+  var nav = document.getElementById("nav")
+  if (document.body.style.backgroundColor === "white") {
+    document.body.style.backgroundColor = "black";
+    top.style.backgroundColor = "black"
+    nav.style.color = "black"
+  } else {
+    document.body.style.backgroundColor = "white"
+    top.style.backgroundColor = "white"
+    nav.style.color = "white"
+  }
+}
+</script>
+<script>
+var options = {
+  strings: ['Let Us Create Your Vision'],
+  typeSpeed: 50,
+  showCursor: false,
+};
+
+var typed = new Typed('.mainTxt', options);
+</script>
+</html>

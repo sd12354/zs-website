@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+  justify-content: center;
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  height: fit-content;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.contact {
+  justify-content: center;
+  position: relative;
+  padding: 30px;
+}
+textarea {
+  position: relative;
+  top: 200px;
+  left: 0px;
+  justify-content: center;
+}
+input {
+  position: relative;
+  top: 0px;;
+}
+form {
+  position: relative;
+}
